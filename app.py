@@ -1,6 +1,7 @@
 from flask import Flask, jsonify
 import random
 import requests
+import os
 
 from bs4 import BeautifulSoup
 app = Flask(__name__)
@@ -30,3 +31,7 @@ def quotes(category):
 @app.route('/', methods=['GET'])
 def mainPage():
     return "Welcome to Quote Generator!"
+
+if __name__ == '__main__':
+   port = int(os.environ.get("PORT", 5000))
+   app.run(debug=True, port=port)
