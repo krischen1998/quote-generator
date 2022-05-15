@@ -27,6 +27,6 @@ def quotes(category):
 
     return jsonify({"Error":"No quotes found, Please try again or change another keyword"})
 
-
-if __name__ == "__main__":
-        app.run()
+@app.route('/', methods=['GET'])
+def mainPage():
+    return "Welcome to Quote Generator!"
