@@ -29,9 +29,8 @@ def quotes(category):
     return jsonify({"Error":"No quotes found, Please try again or change another keyword"})
 
 @app.route('/', methods=['GET'])
-def mainPage():
+def index():
     return "Welcome to Quote Generator!"
 
 if __name__ == '__main__':
-   port = int(os.environ.get("PORT", 5000))
-   app.run(host='0.0.0.0', debug=True, port=port)
+   app.run(threaded=True, port=5000)
