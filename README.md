@@ -3,10 +3,10 @@
 ### You can clone this repo and run this program on your local machine.
 
 ### Or you have the option to send GET requests to the URL: https://quote-generator-app-kc.herokuapp.com/
-
-**Example Usage:**
-
 <br>
+
+## **Example Usage:**
+
 
 **You can add your keyword as a parameter:**
 
