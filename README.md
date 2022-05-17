@@ -1,6 +1,6 @@
 # quote-generator
 
-### You can clone this repo and run this program on your local machine (python virtual environment).
+### You can clone this repo and run this program on your local machine.
 
 ### Or you have the option to send GET requests to the URL: https://quote-generator-app-kc.herokuapp.com/
 
